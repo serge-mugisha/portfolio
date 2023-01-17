@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    font-family: 'Manrope', sans-serif !important;
+}
+
+.box {
+    @apply 2xl:px-64 lg:px-12;
+}
