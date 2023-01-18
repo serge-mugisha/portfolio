@@ -1,11 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    font-family: 'Manrope', sans-serif !important;
+html,
+body {
+    font-family: "Manrope", sans-serif !important;
+    @apply text-dark;
 }
 
 .box {
-    @apply 2xl:px-64 lg:px-12;
+    @apply 2xl:px-60 xl:px-20 lg:px-8 md:px-6;
+}
+
+.h0 {
+    @apply text-6xl font-extrabold pb-3;
+}
+
+.h1 {
+    @apply text-4xl font-bold pb-3;
+}
+
+.h2 {
+    @apply text-3xl font-bold pb-3;
+}
+
+.h3 {
+    @apply text-2xl font-bold pb-3;
+}
+
+.h4 {
+    @apply text-xl font-bold pb-3;
+}
+
+.btn {
+    @apply inline-block px-6 py-2.5 my-3 leading-tight relative;
+    border: .13rem solid #333333;
+}
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    right: -7px;
+    bottom: -7px;
+    border: .13rem solid #333333;
+    display: block;
+    /* z-index: -1; */
+}
+
+.carousel .slide {
+    text-align: left !important;
 }

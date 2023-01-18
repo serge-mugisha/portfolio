@@ -2,11 +2,25 @@
 module.exports = {
   // mode: 'aot',
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "yellow": "#FCC63D",
+        "dark": "#333333",
+        "green": "#C5E5CB",
+        "red": "#EB5757",
+        "grey": "#F2F2F2"
+      },
+      fontFamily: {
+        "logo": ["Aladin", "cursive"],
+      },
+      minHeight: {
+        '80': '80vh',
+        '90': '90vh',
+      }
+    },
   },
   plugins: [],
 }
