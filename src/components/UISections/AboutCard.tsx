@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const AboutCard = () => {
     return (
-        <div className="flex flex-col p-6 px-5 rounded-lg shadow-xl max-w-md min-h-[340px]">
+        <div className="flex flex-col p-6 px-5 rounded-lg shadow-xl max-w-md h-[350px]">
             <div className="flex">
                 <div className="basis-3/12">
                     <Image src="/../public/images/profile.jpg" className="rounded-full" alt="hero image" width={500} height={500} />

@@ -46,8 +46,8 @@ export default function ProjectSection({ img, reverse, bg, title, subtitle, desc
                             ))}
                         </div>
                         {caseStudy ? (<>
-                            <Button href={`/project/${caseStudy}`} classes={`${textColor} bg-dark mx-2`} text="Case Study" />
-                            <Button isLink href={href} classes={`text-dark ${bgColor} mx-2`} text="Visit site" />
+                            <Button href={`/project/${caseStudy}`} classes={`${textColor} bg-dark mr-3`} text="Case Study" />
+                            <Button isLink href={href} classes={`text-dark ${bgColor} ml-3`} text="Visit site" />
                         </>) : <Button isLink href={href} classes={`${textColor} bg-dark`} text="Visit site" />}
                     </div>
                 </div>

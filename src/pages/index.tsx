@@ -90,7 +90,7 @@ export default function Home() {
             <Badge bg="bg-[#FF6767]" color="text-dark" href="https://www.npmjs.com/package/react-responsive-carousel" text="React-responsive-carousel" /> </p>
         </div>
       </main>
-      <NavBar position="footer" />
+      <NavBar bg="bg-gray-100" />
     </>
   )
 }

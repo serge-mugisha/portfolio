@@ -14,12 +14,21 @@ body {
     @apply 2xl:px-60 xl:px-20 lg:px-8 md:px-6;
 }
 
+.box-margin {
+    @apply 2xl:mx-60 xl:mx-20 lg:mx-8 md:mx-6;
+}
+
+.multiple-parallax {
+    @apply bg-center bg-no-repeat bg-cover;
+    background-attachment: fixed, scroll;
+}
+
 .h0 {
     @apply text-6xl font-extrabold pb-3;
 }
 
 .h1 {
-    @apply text-4xl font-bold pb-3;
+    @apply text-4xl font-extrabold pb-3;
 }
 
 .h2 {
@@ -34,22 +43,39 @@ body {
     @apply text-xl font-bold pb-3;
 }
 
+.h5 {
+    @apply text-lg font-bold pb-3;
+}
+
 .btn {
     @apply inline-block px-6 py-2.5 my-3 leading-tight relative;
     border: .13rem solid #333333;
+    @apply transition-all;
 }
 .btn::after {
     content: "";
     position: absolute;
+    top: 5px;
+    left: 5px;
+    right: -5px;
+    bottom: -5px;
+    border: .13rem solid #333333;
+    display: block;
+    z-index: -1;
+    transition: all 150ms ease-in-out;
+}
+
+.btn:hover::after {
     top: 7px;
     left: 7px;
     right: -7px;
     bottom: -7px;
-    border: .13rem solid #333333;
-    display: block;
-    /* z-index: -1; */
 }
 
 .carousel .slide {
     text-align: left !important;
+}
+
+.dot {
+    @apply bg-gray-300 !important;
 }
