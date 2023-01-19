@@ -17,7 +17,7 @@ export default function Home() {
   }
 
   const hero = (
-    <div className="box flex flex-row items-center min-h-90 bg-center bg-fixed bg-contain bg-[url('./../../public/images/hero-bg.png')]">
+    <div className="box flex flex-row items-center min-h-90 bg-center bg-fixed bg-contain bg-[url('/static/hero-bg.png')]">
       <div className="basis-2/5">
         <h1 className="h0">Hello,</h1>
         <h2 className="h4">I'm Serge Mugisha <br /> Software developer and UI designer</h2>
@@ -29,7 +29,7 @@ export default function Home() {
         <Button isButton onClick={() => handleScrollToSection('work')} classes="text-white bg-dark" text="Recent Work" />
       </div>
       <div className="self-center place-items-center basis-3/5 px-2">
-        <Image src="/../public/images/hero.png" alt="hero image" width={840} height={505} />
+        <Image src="/static/hero.png" alt="hero image" width={840} height={505} />
       </div>
     </div>
   )
@@ -50,7 +50,7 @@ export default function Home() {
           <ProjectSection
             bg="green"
             reverse={false}
-            img="/../public/images/delving.png"
+            img="/static/delving.png"
             title="Delving - Delving Co."
             subtitle="Modern spreadsheet management"
             description={["Full-stack web development (React & Python)", "Fast-paced environment focused on rapid experimentation and discovery"]}
@@ -60,7 +60,7 @@ export default function Home() {
           <ProjectSection
             bg="yellow"
             reverse={true}
-            img="/../public/images/ingoma.png"
+            img="/static/ingoma.png"
             title="Ingoma - Imperium rw."
             subtitle="Local music streaming platform"
             description={["UI/UX Design", "Front-end development (React)", "Mobile app development (React Native)"]}
@@ -71,7 +71,7 @@ export default function Home() {
           <ProjectSection
             bg="red"
             reverse={false}
-            img="/../public/images/cinetie.png"
+            img="/static/cinetie.png"
             title="Cinetie - Cinetie."
             subtitle="An online movie streaming platform"
             description={["Front-end developer", "User interface designer"]}

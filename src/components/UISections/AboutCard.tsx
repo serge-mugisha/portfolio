@@ -5,7 +5,7 @@ const AboutCard = () => {
         <div className="flex flex-col p-6 px-5 rounded-lg shadow-xl max-w-2xl">
             <div className="flex items-center">
                 <div className="basis-3/12">
-                    <Image src="/../public/images/profile.png" className="rounded-full" alt="hero image" width={200} height={200} />
+                    <Image src="/static/profile.png" className="rounded-full" alt="hero image" width={200} height={200} />
                 </div>
                 <div className="basis-9/12 pl-4">
                     <h2 className="font-bold">Serge Mugisha</h2>
