@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,8 +10,19 @@ body {
     @apply text-dark;
 }
 
+@screen lg {
+    html { font-size: 16px; }
+}
+
+@screen xl {
+    html { font-size: 18px; }
+}
+
+@screen 2xl {
+    html { font-size: 20px; }
+}
 .box {
-    @apply 2xl:px-60 xl:px-20 lg:px-8 md:px-6;
+    @apply 2xl:px-32 xl:px-20 lg:px-8 md:px-6;
 }
 
 .box-margin {
@@ -19,7 +30,8 @@ body {
 }
 
 .multiple-parallax {
-    @apply bg-center bg-no-repeat bg-cover;
+    @apply bg-center bg-no-repeat rounded-lg;
+    background-size: contain, cover;
     background-attachment: fixed, scroll;
 }
 
@@ -49,7 +61,7 @@ body {
 
 .btn {
     @apply inline-block px-6 py-2.5 my-3 leading-tight relative;
-    border: .13rem solid #333333;
+    border: 0.13rem solid #333333;
     @apply transition-all;
 }
 .btn::after {
@@ -59,7 +71,7 @@ body {
     left: 5px;
     right: -5px;
     bottom: -5px;
-    border: .13rem solid #333333;
+    border: 0.13rem solid #333333;
     display: block;
     z-index: -1;
     transition: all 150ms ease-in-out;

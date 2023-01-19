@@ -6,8 +6,8 @@ export default function NavBar({ bg }) {
     return (
         <header className={`box flex flex-row place-content-around items-center py-4 sticky ${bg ?? ""}`}>
             <div className='flex basis-1/3 place-content-start items-center '>
-                <Link className="px-3 font-semibold" href="/work">Work</Link>
-                <Link className="px-3 font-semibold" href="/projects">Projects</Link>
+                <Link className="px-3 font-semibold" href="/#work">Work</Link>
+                <Link className="px-3 font-semibold" href="/#about">About</Link>
                 <Link className="px-3 font-semibold" href="/resume">Resume</Link>
             </div>
             <div className="flex basis-1/3 place-content-center">

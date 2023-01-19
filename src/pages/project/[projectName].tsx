@@ -31,8 +31,8 @@ const Project = () => {
                             <p className="my-3">A Rwandan based music streaming platform made for local listeners and artists.</p>
                             <Button isLink href="https://ingoma.app/" classes="text-white bg-[#191919]" text="Visit website" />
                         </div>
-                        <div className="basis-3/5">
-                            <Image className="img-fluid" src={'/../public/images/ingoma.png'} alt={''} width={645} height={550} />
+                        <div className="basis-3/5 text-center">
+                            <Image className="inline" src={'/../public/images/ingoma.png'} alt={''} width={645} height={550} />
                         </div>
                     </div>
 
@@ -93,7 +93,7 @@ const Project = () => {
                     <div className="box flex flex-row py-10 items-center bg-[#191919] text-white">
                         <div className="basis-5/12">
                             <h2 className="h3">Inspirations</h2>
-                            <Image className="img-fluid py-3" src={'/../public/images/inspirations.png'} width={560} height={710} alt="Inspirations" />
+                            <Image className="inline py-3" src={'/../public/images/inspirations.png'} width={560} height={710} alt="Inspirations" />
                         </div>
                         <div className="basis-6/12 pl-10">
                             <h2 className="h2">From Brainstorming to Ideation</h2>
@@ -126,10 +126,10 @@ const Project = () => {
                             <p className="py-2">
                                 With a user-centered design in mind, we had to focus on the journey maps, draft out important features the user can have on his/her fingertips.
                             </p>
-                            <Image className="img-fluid py-2" width={560} height={700} src={'/../public/images/ingoma-brand.png'} alt="Branding the Product" />
+                            <Image className="inline py-2" width={560} height={700} src={'/../public/images/ingoma-brand.png'} alt="Branding the Product" />
                         </div>
                         <div className="basis-6/12 px-3">
-                            <Image className="img-fluid py-2" width={560} height={700} src={'/../public/images/ingoma-cover.png'} alt="Branding the Product" />
+                            <Image className="inline py-2" width={560} height={700} src={'/../public/images/ingoma-cover.png'} alt="Branding the Product" />
                             <h2 className="h3 py-2">Designing</h2>
                             <p className="">
                                 With all ideas and information gathered, we started giving our concepts a life. Branding the app, building high-fidelity mockups and making testable prototypes.
@@ -139,7 +139,7 @@ const Project = () => {
 
                     <div className="box text-center">
                         <div className="bg-dark rounded shadow">
-                            <Image className="img-fluid" width={1020} height={620} src={'/../public/images/ingoma-ds.png'} alt="Ingoma Design System" />
+                            <Image className="inline" width={1020} height={620} src={'/../public/images/ingoma-ds.png'} alt="Ingoma Design System" />
                         </div>
                     </div>
 
@@ -155,11 +155,13 @@ const Project = () => {
                     </div>
 
                     {/* Parallax2 */}
-                    <div className="multiple-parallax my-10 h-screen bg-[url('./../../public/images/i-mobile-screens.png'),_url('./../../public/images/i-mobile-screens-bg.png')]" />
+                    <div className="box">
+                        <div className="multiple-parallax my-10 h-screen bg-[url('./../../public/images/i-mobile-screens.png'),_url('./../../public/images/i-mobile-screens-bg.png')]" />
+                    </div>
 
                     <div className="box flex flex-row items-center py-10">
-                        <div className="basis-7/12">
-                            <Image className="img-fluid rounded shadow" width={760} height={660} src={'/../public/images/i-dashboards-sm.png'} alt="The Challenge" />
+                        <div className="basis-7/12 text-center">
+                            <Image className="inline rounded shadow" width={760} height={660} src={'/../public/images/i-dashboards-sm.png'} alt="The Challenge" />
                         </div>
                         <div className="basis-5/12 pl-3 text-right">
                             <h2 className="h3">The Dashboards</h2>
@@ -173,13 +175,15 @@ const Project = () => {
                     </div>
 
                     {/* Parallax2 */}
-                    <div className="multiple-parallax my-10 h-screen bg-[url('./../../public/images/i-dashboards.png'),_url('./../../public/images/i-dashboards-bg.png')]" />
+                    <div className="box">
+                        <div className="multiple-parallax my-10 h-screen bg-[url('./../../public/images/i-dashboards.png'),_url('./../../public/images/i-dashboards-bg.png')]" />
+                    </div>
 
                     {/* Results */}
                     <h2 className="h3 py-10 mb-5 text-center">The Results & What I Learned</h2>
                     <div className="box flex flex-row items-center">
                         <div className="basis-4/12 px-5 text-center">
-                            <Image className="img-fluid rounded shadow" width={465} height={705} src={'/../public/images/ingoma-results.png'} alt="The Challenge" />
+                            <Image className="inline rounded shadow" width={465} height={705} src={'/../public/images/ingoma-results.png'} alt="The Challenge" />
                         </div>
                         <div className="basis-8/12 px-5">
                             <div className="flex flex-row items-center bg-dark text-white mb-5 py-5 px-3 rounded">
@@ -222,8 +226,8 @@ const Project = () => {
                                 <Badge text="Bootstrap" />
                             </div>
                         </div>
-                        <div className="basis-7/12">
-                            <Image className="img-fluid rounded shadow" width={660} height={410} src={'/../public/images/ingoma-dev.png'} alt="The Development Stack" />
+                        <div className="basis-7/12 text-center">
+                            <Image className="inline rounded shadow" width={660} height={410} src={'/../public/images/ingoma-dev.png'} alt="The Development Stack" />
                         </div>
                     </div>
 
@@ -231,8 +235,8 @@ const Project = () => {
                     <div className="box flex flex-row items-center py-10 bg-dark text-white text-center">
                         <div className="basis-1/2 px-5">
                             <div className="flex flex-row items-center text-left py-2">
-                                <div className="basis-3/12">
-                                    <Image className="img-fluid" width={100} height={100} src={'/../public/images/serge.png'} alt="Team behind Ingoma app - Serge Mugisha" />
+                                <div className="basis-3/12 text-center">
+                                    <Image className="inline" width={100} height={100} src={'/../public/images/serge.png'} alt="Team behind Ingoma app - Serge Mugisha" />
                                 </div>
                                 <div className="content basis-9/12 px-5">
                                     <h4 className="h4">Serge Mugisha</h4>
@@ -244,8 +248,8 @@ const Project = () => {
 
                             </div>
                             <div className="flex flex-row items-center text-left py-2">
-                                <div className="basis-3/12">
-                                    <Image className="img-fluid" width={100} height={100} src={'/../public/images/shyaka.png'} alt="Team behind Ingoma app - Jonathan Shyaka" />
+                                <div className="basis-3/12 text-center">
+                                    <Image className="inline" width={100} height={100} src={'/../public/images/shyaka.png'} alt="Team behind Ingoma app - Jonathan Shyaka" />
                                 </div>
                                 <div className="content basis-9/12 px-5">
                                     <h4 className="h4">Jonathan Shyaka</h4>
@@ -256,8 +260,8 @@ const Project = () => {
                                 </div>
                             </div>
                             <div className="flex flex-row items-center text-left py-2">
-                                <div className="basis-3/12">
-                                    <Image className="img-fluid" width={100} height={100} src={'/../public/images/chris.png'} alt="Team behind Ingoma app - Christian Mugisha" />
+                                <div className="basis-3/12 text-center">
+                                    <Image className="inline" width={100} height={100} src={'/../public/images/chris.png'} alt="Team behind Ingoma app - Christian Mugisha" />
                                 </div>
                                 <div className="content basis-9/12 px-5">
                                     <h4 className="h4">Christian Mugisha</h4>
@@ -269,8 +273,8 @@ const Project = () => {
                         </div>
                         <div className="basis-1/2 px-5">
                             <div className="flex flex-row items-center text-left py-2">
-                                <div className="basis-3/12">
-                                    <Image className="img-fluid" width={100} height={100} src={'/../public/images/jovite.png'} alt="Team behind Ingoma app - Jovite Ngoga" />
+                                <div className="basis-3/12 text-center">
+                                    <Image className="inline" width={100} height={100} src={'/../public/images/jovite.png'} alt="Team behind Ingoma app - Jovite Ngoga" />
                                 </div>
                                 <div className="content basis-9/12 px-5">
                                     <h4 className="h4">Jovite Ngoga</h4>
@@ -281,8 +285,8 @@ const Project = () => {
 
                             </div>
                             <div className="flex flex-row items-center text-left py-2">
-                                <div className="basis-3/12">
-                                    <Image className="img-fluid" width={100} height={100} src={'/../public/images/kenny.png'} alt="Team behind Ingoma app - Kenny Ruzindana" />
+                                <div className="basis-3/12 text-center">
+                                    <Image className="inline" width={100} height={100} src={'/../public/images/kenny.png'} alt="Team behind Ingoma app - Kenny Ruzindana" />
                                 </div>
                                 <div className="content basis-9/12 px-5">
                                     <h4 className="h4">Kenny Ruzindana</h4>
@@ -292,8 +296,8 @@ const Project = () => {
                                 </div>
                             </div>
                             <div className="flex flex-row items-center text-left py-2">
-                                <div className="basis-3/12">
-                                    <Image className="img-fluid" width={100} height={100} src={'/../public/images/imperium.png'} alt="Team behind Ingoma app - Imperium Rw" />
+                                <div className="basis-3/12 text-center">
+                                    <Image className="inline" width={100} height={100} src={'/../public/images/imperium.png'} alt="Team behind Ingoma app - Imperium Rw" />
                                 </div>
                                 <div className="content basis-9/12 px-5">
                                     <h4 className="h4">Imperium Rw</h4>

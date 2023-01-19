@@ -1,12 +1,13 @@
 import Link from 'next/link';
 
 
-const Button = ({ isLink, href, classes, text, onClick }) => {
+const Button = ({ isButton, isLink, href, classes, text, onClick }) => {
     return isLink ? <span className="relative z-[1]"><a className={`btn font-medium text-sm ${classes}`} href={href ?? "#"} target="_blank">{text}</a></span> :
+        isButton ? <span className="relative z-[1]"><button className={`btn font-medium text-sm ${classes}`} onClick={onClick ?? null}>{text}</button></span> :
         <span className="relative z-[1]">
             <Link
                 className={`btn font-medium text-sm ${classes}`}
-                href={href ?? "#"}
+                    href={href ?? ""}
                 onClick={onClick ?? null}>
                 {text}
             </Link>

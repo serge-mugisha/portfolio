@@ -30,7 +30,7 @@ export default function ProjectSection({ img, reverse, bg, title, subtitle, desc
     }
     return (
         <>
-            <section className={`box py-5 flex ${reverse ? 'flex-row-reverse' : 'flex-row'} items-center min-h-80 ${bgColor}`}>
+            <section className={`box py-5 flex ${reverse ? 'flex-row-reverse' : 'flex-row'} items-center h-screen ${bgColor}`}>
                 <div className={`basis-1/2 ${reverse ? 'text-right' : 'text-left'}`}>
                     <h3 className="h3">{title}</h3>
                     <h4 className="h4">{subtitle}</h4>
@@ -40,7 +40,7 @@ export default function ProjectSection({ img, reverse, bg, title, subtitle, desc
                                 <li key={index} className="py-1">{reverse ? "" : "- "}{item}{reverse ? " -" : ""}</li>
                             ))}
                         </ul>
-                        <div className="py-3 flex-row">
+                        <div className={`py-3 flex-row max-w-lg ${reverse ? 'float-right' : ''}`}>
                             {skills?.map((item, index) => (
                                 <Badge key={index} text={item} />
                             ))}

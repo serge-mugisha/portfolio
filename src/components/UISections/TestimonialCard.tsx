@@ -39,17 +39,17 @@ const testimonials = [
 
 const TestimonialCard = () => {
     return (
-        <div className="p-6 rounded-lg shadow-xl max-w-md h-[350px]">
+        <div className="p-6 rounded-lg shadow-xl lg:max-w-md">
             <MyCarousel>
                 {testimonials.map((testimonial, index) => (
                     <div key={index} className="flex flex-col pb-6">
-                        <div className="flex">
+                        <div className="flex items-center">
                             <div className="basis-2/12">
-                                <Image src={testimonial.image} className="rounded-full" alt="hero image" width={500} height={500} />
+                                <Image src={testimonial.image} className="rounded-full" alt="hero image" width={100} height={100} />
                             </div>
                             <div className="basis-10/12 pl-4">
                                 <h2 className="font-bold">{testimonial.name}</h2>
-                                <p className="text-sm pt-[2px]">{testimonial.role}</p>
+                                <p className="text-sm pt-[2px] max-w-md">{testimonial.role}</p>
                                 <Link target="_blank" href="https://www.linkedin.com/in/serge-mugisha/details/recommendations/" className="text-sm text-gray-400 hover:text-blue-400">{testimonial.source}</Link>
                             </div>
                         </div>
