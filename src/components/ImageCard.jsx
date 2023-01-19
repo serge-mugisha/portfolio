@@ -1,4 +1,7 @@
 import React from 'react'
+import { Badge } from '@/components/Badge';
+import Image from 'next/image'
+
 
 export const ImageCard = ({ img, title, description, link, tags }) => {
     return (
@@ -10,8 +13,7 @@ export const ImageCard = ({ img, title, description, link, tags }) => {
                 <div className="p-5">
                     <h5 className="text-gray-900 h5 font-medium">Card title</h5>
                     <p className="text-gray-700 text-base mb-4">
-                        Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
+
                     </p>
                     <div>
                         <Badge text={"HTML5"} />

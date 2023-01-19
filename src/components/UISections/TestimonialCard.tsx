@@ -50,12 +50,12 @@ const TestimonialCard = () => {
                             <div className="basis-10/12 pl-4">
                                 <h2 className="font-bold">{testimonial.name}</h2>
                                 <p className="text-sm pt-[2px] max-w-md">{testimonial.role}</p>
-                                <Link target="_blank" href="https://www.linkedin.com/in/serge-mugisha/details/recommendations/" className="text-sm text-gray-400 hover:text-blue-400">{testimonial.source}</Link>
+                                <Link target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/serge-mugisha/details/recommendations/" className="text-sm text-gray-400 hover:text-blue-400">{testimonial.source}</Link>
                             </div>
                         </div>
                         <p className="pt-3 before:content-['“'] before:text-2xl after:content-['”'] after:text-2xl">
                             {testimonial.description}
-                            <Link target="_blank" href="https://www.linkedin.com/in/serge-mugisha/details/recommendations/" className="pl-2 inline text-gray-400 hover:text-blue-400">...more</Link>
+                            <Link target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/serge-mugisha/details/recommendations/" className="pl-2 inline text-gray-400 hover:text-blue-400">...more</Link>
                         </p>
                     </div>
                 ))}
