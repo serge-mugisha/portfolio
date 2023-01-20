@@ -6,7 +6,7 @@ const testimonials = [
     {
         name: "Carl Coryell-Martin",
         image: "/static/Carl Coryell-Martin.png",
-        description: "Serge has been a joy to pair with. He consistently brought a positive, can-do, approach to our programming sessions that helped us deliver working, readable, code. Working solo, he worked to understand the underling need behind stories on our backlog and was successful and independently delivering value",
+        description: "Serge has been a joy to pair with. He consistently brought a positive, can-do, approach to our programming sessions that helped us deliver working, readable, code",
         role: "CTO at Delving Co.",
         url: "https://sergemugisha.com/",
         source: "LinkedIn review"
@@ -14,7 +14,7 @@ const testimonials = [
     {
         name: "Brandon Shelley",
         image: "/static/Brandon Shelley.png",
-        description: "Serge is an excellent problem-solver, capable of quickly recognizing and addressing obstacles, finding creative ways to work through difficult challenges, and leading others to thoughtful solutions. And to top it off, Serge is great at jumping into Figma or Miro and prototyping design concepts to explore ideas before writing code",
+        description: "Serge is an excellent problem-solver, capable of quickly recognizing and addressing obstacles, finding creative ways to work through difficult challenges, and leading others to thoughtful solutions",
         role: "Product designer & developer.",
         url: "https://sergemugisha.com/",
         source: "LinkedIn review"
@@ -22,7 +22,7 @@ const testimonials = [
     {
         name: "Joshua McKenty",
         image: "/static/Joshua McKenty.png",
-        description: "Serge is a joy to work with - that rare combination of a strong individual talent and a great team player. He's fast and self-directed, which has been a huge benefit with our remote and distributed team. Even more important, he's intensely dedicated to continuous learning, and is great at sharing his latest insights with the rest of us",
+        description: "Serge is a joy to work with - that rare combination of a strong individual talent and a great team player. He's fast and self-directed, which has been a huge benefit with our remote and distributed team",
         role: "CEO at Delving Co.",
         url: "https://sergemugisha.com/",
         source: "LinkedIn review"
@@ -30,7 +30,7 @@ const testimonials = [
     {
         name: "Dina Buric",
         image: "/static/Dina Buric.png",
-        description: "I feel incredibly lucky to get to work with Serge! Not only is knowledgeable but he is happy to share and explain all the things! Pairing with Serge is such a joy, he actively listens to others' ideas and makes them happen, ensuring that we're all working together at each step. I highly recommend working with Serge!",
+        description: "I feel incredibly lucky to get to work with Serge! Not only is knowledgeable but he is happy to share and explain all the things! Pairing with Serge is such a joy, he actively listens to others' ideas and makes them happen, ensuring that we're all working together at each step",
         role: "Full Stack Software Developer | Connecting math, art, and technology",
         url: "https://sergemugisha.com/",
         source: "LinkedIn review"
@@ -39,7 +39,7 @@ const testimonials = [
 
 const TestimonialCard = () => {
     return (
-        <div className="p-6 rounded-lg shadow-xl lg:max-w-md">
+        <div className="p-6 rounded-lg shadow-xl lg:max-w-md min-h-[350px]">
             <MyCarousel>
                 {testimonials.map((testimonial, index) => (
                     <div key={index} className="flex flex-col pb-6">

@@ -308,8 +308,7 @@ const Project = () => {
                     </div>
 
                     <div className="box text-center py-5">
-                        <h4 className="h5">Thanks for watching!</h4>
-                        <h3 className="h4">Case Study by Serge Mugisha</h3>
+                        <Link className="h5 underline" href="https://www.behance.net/gallery/120230945/UIUX-Case-Ingoma-Rwandan-based-Music-streaming-App" target="_blank" rel="noreferrer">Case Study by Serge Mugisha</Link>
                     </div>
                 </div>
             </main>

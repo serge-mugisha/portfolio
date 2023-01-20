@@ -10,8 +10,7 @@ export default function MyCarousel(props) {
                 showIndicators={true}
                 autoPlay={true} infiniteLoop={true}
                 showStatus={false} showThumbs={false}
-                interval={8000} useKeyboardArrows={true}
-            // width="10%"
+                interval={12000} useKeyboardArrows={true}
             >
 
                 {props.children}
