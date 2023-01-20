@@ -43,7 +43,7 @@ export default function Home() {
         <title>Serge Mugisha</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <div className="block md:hidden bg-yellow h-screen max-h-screen px-6">
         <Link href="/" className="block pt-5 text-center text-2xl font-medium font-logo">Serge Mugisha</Link>
