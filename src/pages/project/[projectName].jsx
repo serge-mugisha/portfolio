@@ -1,17 +1,24 @@
 import NavBar from '@/components/NavBar';
 import Head from 'next/head';
 import { useRouter } from 'next/router'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
-import Link from 'next/link';
+import { NextLink as Link } from '@/components/NextLink'
 import Button from '@/components/Button';
 import Icon from '@/components/Icon';
 import { Badge } from '@/components/Badge';
+import ReactGA from 'react-ga';
+
 
 
 const Project = () => {
     const router = useRouter();
     const { projectName } = router.query;
+
+    useEffect(() => {
+        ReactGA.pageview(`/case-study/${projectName}`);
+    }, [])
+
     return (
         <>
             <Head>

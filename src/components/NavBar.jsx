@@ -1,6 +1,6 @@
-import Link from 'next/link'
 import React from 'react'
 import Icon from '@/components/Icon'
+import { NextLink as Link } from '@/components/NextLink'
 
 export default function NavBar({ bg }) {
     return (

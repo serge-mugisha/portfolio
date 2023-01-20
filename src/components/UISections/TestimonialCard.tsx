@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import MyCarousel from '@/components/MyCarousel'
-import Link from 'next/link'
+import { NextLink as Link } from '@/components/NextLink'
 
 const testimonials = [
     {

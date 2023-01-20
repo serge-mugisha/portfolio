@@ -7,11 +7,18 @@ import AboutCard from '@/components/UISections/AboutCard'
 import TestimonialCard from '@/components/UISections/TestimonialCard'
 import ContactSection from '@/components/UISections/ContactSection'
 import { Badge } from '@/components/Badge'
-import Link from 'next/link'
+import { NextLink as Link } from '@/components/NextLink'
 import Icon from '@/components/Icon'
+import { useEffect } from 'react'
+import ReactGA from 'react-ga';
+
 
 
 export default function Home() {
+
+  useEffect(() => {
+    ReactGA.pageview('/home');
+  }, [])
 
   const handleScrollToSection = (id) => {
     console.log('scrolling to section')
