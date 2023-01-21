@@ -1,13 +1,16 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { useEffect } from 'react';
 import ReactGA from 'react-ga';
 
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  const TrackingID = "G-Q34F93E2QD"
-  ReactGA.initialize(TrackingID);
+  useEffect(() => {
+    const TrackingID = "G-Q34F93E2QD"
+    ReactGA.initialize(TrackingID);
+  }, [])
 
   return <>
     <Head>
