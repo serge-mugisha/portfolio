@@ -2,15 +2,13 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useEffect } from 'react';
-import ReactGA from 'react-ga';
+// import ReactGA from 'react-ga';
+import { GoogleAnalytics, usePageViews } from "nextjs-google-analytics";
+
 
 
 export default function App({ Component, pageProps }: AppProps) {
-
-  useEffect(() => {
-    const TrackingID = "G-Q34F93E2QD"
-    ReactGA.initialize(TrackingID);
-  }, [])
+  usePageViews();
 
   return <>
     <Head>
@@ -21,6 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <title>Serge Mugisha</title>
       <link rel="icon" href="/favicon.png" />
     </Head>
+    <GoogleAnalytics />
     <Component {...pageProps} />
   </>
 }

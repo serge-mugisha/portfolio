@@ -1,13 +1,15 @@
 import { NextLink as Link } from '@/components/NextLink'
-import ReactGA from 'react-ga';
+import { event } from "nextjs-google-analytics";
+
 
 
 const Button = ({ isButton, isLink, href, classes, text, onClick }) => {
     const sendAnalytics = () => {
-        ReactGA.event({
-            category: 'Outbound link <<<',
-            action: `${text} navigated to || ${href} ||`
-        });
+        event('Outbound link <<<',
+            {
+                category: 'Outbound link <<<',
+                label: `${text} navigated to || ${href} ||`
+            });
     }
 
     return isLink ? <span className="relative z-[1]"><a className={`btn font-medium text-sm ${classes}`} href={href ?? "#"} target="_blank" rel="noreferrer" onClick={sendAnalytics}>{text}</a></span> :

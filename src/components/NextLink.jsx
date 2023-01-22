@@ -1,15 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
-import ReactGA from 'react-ga';
+import { event } from "nextjs-google-analytics";
 
 
 export const NextLink = (props) => {
     const sendAnalytics = () => {
         if (props?.href?.includes("http")) {
-            ReactGA.event({
-                category: 'Outbound link <<<',
-                action: `Navigated to || ${props?.href} ||`
-            });
+            event('Outbound link <<<',
+                {
+                    category: 'Outbound link <<<',
+                    label: `Navigated to || ${props?.href} ||`
+                });
         }
     }
     return (
