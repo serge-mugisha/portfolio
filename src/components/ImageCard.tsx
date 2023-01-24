@@ -2,8 +2,15 @@ import React from 'react'
 import { Badge } from '@/components/Badge';
 import Image from 'next/image'
 
+interface ImageCardProps {
+    img: string;
+    title: string;
+    description: string;
+    link: string;
+    tags: string[];
+}
 
-export const ImageCard = ({ img, title, description, link, tags }) => {
+export const ImageCard = ({ img, title, description, link, tags }: ImageCardProps) => {
     return (
         <div className="flex justify-center">
             <div className="rounded-lg shadow-lg bg-white max-w-sm">

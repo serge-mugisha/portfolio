@@ -3,12 +3,19 @@ import Image from 'next/image'
 import { Badge } from './Badge'
 import Button from './Button'
 
-export default function ProjectSection({ img, reverse, bg, title, subtitle, description, skills, href, caseStudy }) {
-    //     @media only screen and (max-width: 600px) {
-    //         padding: 10px 30px;
-    //         height: 100vh !important;
-    //     }
-    // `
+interface ProjectSectionProps {
+    img: string;
+    reverse?: boolean;
+    bg?: string;
+    title: string;
+    subtitle: string;
+    description: string[];
+    skills: string[];
+    href: string;
+    caseStudy?: string;
+}
+
+export default function ProjectSection({ img, reverse, bg, title, subtitle, description, skills, href, caseStudy }: ProjectSectionProps) {
     let textColor = null
     let bgColor = null
     switch (bg) {

@@ -2,7 +2,7 @@ import React from 'react'
 import Icon from '@/components/Icon'
 import { NextLink as Link } from '@/components/NextLink'
 
-export default function NavBar({ bg }) {
+export default function NavBar({ bg }: { bg?: string }) {
     return (
         <header className={`box flex flex-row place-content-around items-center py-4 sticky ${bg ?? ""}`}>
             <div className='flex basis-1/3 place-content-start items-center '>

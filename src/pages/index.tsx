@@ -20,7 +20,7 @@ export default function Home() {
     ReactGA.pageview('/home');
   }, [])
 
-  const handleScrollToSection = (id) => {
+  const handleScrollToSection = (id: string) => {
     console.log('scrolling to section')
     const section = document.getElementById(id)
     section?.scrollIntoView({ behavior: 'smooth' })

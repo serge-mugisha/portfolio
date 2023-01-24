@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { event } from "nextjs-google-analytics";
 
 
-export const NextLink = (props) => {
+export const NextLink = (props: any) => {
     const sendAnalytics = () => {
         if (props?.href?.includes("http")) {
             event('Outbound link <<<',
