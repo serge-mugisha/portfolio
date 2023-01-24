@@ -6,10 +6,10 @@ import { event } from "nextjs-google-analytics";
 export const NextLink = (props: any) => {
     const sendAnalytics = () => {
         if (props?.href?.includes("http")) {
-            event('Outbound link <<<',
+            event('Outbound Link',
                 {
-                    category: 'Outbound link <<<',
-                    label: `Navigated to || ${props?.href} ||`
+                    category: 'Outbound Link',
+                    label: `===> ${props?.href}`
                 });
         }
     }

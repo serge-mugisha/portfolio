@@ -13,10 +13,10 @@ interface ButtonProps {
 
 const Button = ({ isButton, isLink, href, classes, text, onClick }: ButtonProps) => {
     const sendAnalytics = () => {
-        event('Outbound link <<<',
+        event('Outbound Link',
             {
-                category: 'Outbound link <<<',
-                label: `${text} navigated to || ${href} ||`
+                category: 'Outbound Link',
+                label: `${text} ==> ${href}`
             });
     }
 
