@@ -2,7 +2,7 @@ import NavBar from '@/components/NavBar';
 import Head from 'next/head';
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
-import Image from 'next/image'
+import { NextImage as Image } from '@/components/NextImage'
 import { NextLink as Link } from '@/components/NextLink'
 import Button from '@/components/Button';
 import Icon from '@/components/Icon';

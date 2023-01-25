@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import NavBar from '@/components/NavBar'
 import Button from '@/components/Button'
 import ProjectSection from '@/components/ProjectSection'
@@ -8,6 +7,7 @@ import TestimonialCard from '@/components/UISections/TestimonialCard'
 import ContactSection from '@/components/UISections/ContactSection'
 import { Badge } from '@/components/Badge'
 import { NextLink as Link } from '@/components/NextLink'
+import { NextImage as Image } from '@/components/NextImage'
 import Icon from '@/components/Icon'
 import { useEffect } from 'react'
 import ReactGA from 'react-ga';
