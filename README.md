@@ -1,3 +1,5 @@
+![CI/CD FTP Deploy](https://github.com/serge-mugisha/portfolio/actions/workflows/main.yml/badge.svg?branch=main)
+
 Welcome to my [Portfolio](https://sergemugisha.com/)'s repository 😎
 
 Created with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
