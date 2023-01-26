@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import { NextImage as Image } from '@/components/NextImage'
 import { Badge } from './Badge'
 import Button from './Button'
 

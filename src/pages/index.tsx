@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import NavBar from '@/components/NavBar'
 import Button from '@/components/Button'
 import ProjectSection from '@/components/ProjectSection'
@@ -8,6 +7,7 @@ import TestimonialCard from '@/components/UISections/TestimonialCard'
 import ContactSection from '@/components/UISections/ContactSection'
 import { Badge } from '@/components/Badge'
 import { NextLink as Link } from '@/components/NextLink'
+import { NextImage as Image } from '@/components/NextImage'
 import Icon from '@/components/Icon'
 import { useEffect } from 'react'
 import ReactGA from 'react-ga';
@@ -67,7 +67,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <Button isLink href="mailto:me@sergemugisha.com" classes="text-yellow bg-dark" text="E-mail: me@sergemugisha.com" />
+            <Button isLink href="mailto:bsergemugisha@gmail.com" classes="text-yellow bg-dark" text="E-mail: bsergemugisha@gmail.com" />
             <Button isLink href="https://drive.google.com/file/d/1N-tJ5MMt5N9b3erNF6iA57A9OAXTtwJ8/view?usp=share_link" classes="text-dark bg-yellow" text="Resume" />
           </div>
           <div className="py-10 flex basis-1/3 place-content-end">

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Badge } from '@/components/Badge';
-import Image from 'next/image'
+import { NextImage as Image } from '@/components/NextImage'
 
 interface ImageCardProps {
     img: string;

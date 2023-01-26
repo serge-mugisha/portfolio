@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import { NextImage as Image } from '@/components/NextImage'
 
 const AboutCard = () => {
     return (
