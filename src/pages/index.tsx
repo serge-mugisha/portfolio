@@ -118,7 +118,7 @@ export default function Home() {
               reverse={false}
               img="/static/cinetie.png"
               title="Cinetie - Cinetie."
-              subtitle="An online movie streaming platform"
+              subtitle="Online movie streaming platform"
               description={["Front-end developer", "User interface designer"]}
               skills={["React.js", "Redux", "Bootstrap", "Figma"]}
               href="https://cinetie.com/"
