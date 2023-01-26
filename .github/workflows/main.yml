@@ -1,6 +1,6 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and deploy to an ftp server
 
-name: CI/CD 🚀
+name: CI/CD 🚀 
 
 on:
   push:
