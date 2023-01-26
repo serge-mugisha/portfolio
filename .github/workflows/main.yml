@@ -13,23 +13,22 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [17.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - name: 🚿 Get latest code 🚿
       uses: actions/checkout@v3
-    - name: 🌊 Setup Node.js ${{ matrix.node-version }}
+
+    - name: 🌊 Use Node.js 18
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: "18"
         cache: 'npm'
+
     - name: 🪨 Install dependencies 🪨
       run: npm install
+
     - name: 🚧 Build 🚧
       run: npm run build
+
     - name: 🚀 FTP Deploy to Cpanel 📂
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
