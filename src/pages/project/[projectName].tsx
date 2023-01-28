@@ -405,9 +405,9 @@ const Project = () => {
                     </p>
                 </div>
 
-                <div className="box py-10">
-                    <Image src={'/static/groovin-phones-bw.png'} alt={''} width={1550} height={950} />
-                    <Image src={'/static/groovin-phones-color.png'} alt={''} width={1550} height={1630} />
+                <div className="box py-10 text-center">
+                    <Image className="inline" src={'/static/groovin-phones-bw.png'} alt={''} width={1550} height={950} />
+                    <Image className="inline" src={'/static/groovin-phones-color.png'} alt={''} width={1550} height={1630} />
                 </div>
 
                 <div className="box pt-10 text-center">
@@ -418,7 +418,7 @@ const Project = () => {
                 </div>
 
                 <div className="py-10">
-                    <Image src={'/static/groovin-pc-dashboards.png'} alt={''} width={1600} height={1180} />
+                    <Image className="w-screen" src={'/static/groovin-pc-dashboards.png'} alt={''} width={1600} height={1180} />
                 </div>
 
                 <div className="box py-5">
