@@ -11,6 +11,7 @@ import { NextImage as Image } from '@/components/NextImage'
 import Icon from '@/components/Icon'
 import { useEffect } from 'react'
 import ReactGA from 'react-ga';
+import { Card } from '@/components/Card'
 
 
 
@@ -125,7 +126,14 @@ export default function Home() {
             />
           </div>
 
-          <div className="2xl:px-60 xl:px-10 lg:px-4 md:px-2 py-5 flex flex-row place-content-center lg:flex-nowrap md:flex-wrap">
+          <div className="box">
+            <h2 className="h3 mb-3 text-center">Projects</h2>
+            <div className="flex flex-row items-center justify-center">
+              <Card img="/static/groovin-thumb.png" title="Groovin" description="A fashion design crowdsourcing platform" link="/project/groovin" tags={['UI/UX', 'Graphic design', 'Case study']} />
+            </div>
+          </div>
+
+          <div className="mt-10 2xl:px-60 xl:px-10 lg:px-4 md:px-2 py-5 flex flex-row place-content-center lg:flex-nowrap md:flex-wrap">
             <div className="pr-3 my-5 xl:basis-2/5">
               <h3 id="about" className="h3">About</h3>
               <AboutCard />

@@ -19,6 +19,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Icons.js", "src/components/ImageCard.tsx", "src/pages/project/[projectName].tsx", "src/components/ImageCard.tsx", "src/components/Icons.tsx", "src/components/Icon.tsx", "src/pages/index.tsx", "src/components/ProjectSection.tsx", "src/components/NavBar.tsx", "src/components/Button.tsx", "src/components/Badge.tsx", "src/components/UISections/ContactSection.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Icons.js", "src/components/Card.tsx", "src/pages/project/[projectName].tsx", "src/components/Card.tsx", "src/components/Icons.tsx", "src/components/Icon.tsx", "src/pages/index.tsx", "src/components/ProjectSection.tsx", "src/components/NavBar.tsx", "src/components/Button.tsx", "src/components/Badge.tsx", "src/components/UISections/ContactSection.tsx"],
   "exclude": ["node_modules"]
 }
