@@ -332,7 +332,7 @@ const Project = () => {
             <div className="bg-no-repeat bg-cover bg-fixed bg-[url('/static/groovin-bg.png')]">
                 <div className="box py-5">
                     <h2 className="h2">Project overview</h2>
-                    <p>
+                    <p className="max-w-3xl">
                         Groovin is a fashion design crowdsourcing platform that empowers and supports
                         graphic and fashion designer’s creativity on a global scale by sharing their passion for
                         the world to vote and buy them.
@@ -345,10 +345,10 @@ const Project = () => {
                 </div>
                 <div className="box py-5 text-center">
                     <h2 className="h2">The problem</h2>
-                    <p>
+                    <p className="max-w-3xl m-auto">
                         Clothing industries most likely run out of designs, or people get tired of repeating design styles. Many of us also like wearing unique clothing styles, which is quite impossible due to the limited number of clothing brands out there.
                     </p>
-                    <p className="py-3">
+                    <p className="py-3 max-w-3xl m-auto">
                         On the other side, we have many people with different clothing designs, and styles in their minds which they miss the opportunity to implement, due to a lack of resources.
                     </p>
                 </div>
@@ -371,11 +371,11 @@ const Project = () => {
                 <div className="box py-10 flex flex-row items-center justify-between">
                     <div className="basis-3/5 px-5">
                         <h2 className="h2">How it works</h2>
-                        <p>
+                        <p className="max-w-2xl">
                             Everything starts with the designers. These are individual artists who have creative art ideas
                             they want to share with the world.
                         </p>
-                        <p className="py-3">
+                        <p className="py-3 max-w-xl">
                             When each design is created, following Grooving rules and measurements, the design goes through the voting process on the platform.
                         </p>
                     </div>
@@ -400,7 +400,7 @@ const Project = () => {
 
                 <div className="box py-5 text-center">
                     <h2 className="h2">Designing</h2>
-                    <p>
+                    <p className="max-w-3xl m-auto">
                         With all ideas and information gathered, we started giving our concepts a life. Branding the app, building high-fidelity mockups, and making testable prototypes.
                     </p>
                 </div>
@@ -421,9 +421,9 @@ const Project = () => {
                     <Image className="w-screen" src={'/static/groovin-pc-dashboards.png'} alt={''} width={1600} height={1180} />
                 </div>
 
-                <div className="box py-5">
+                <div className="box py-5 text-center">
                     <h2 className="h2">Final thoughts</h2>
-                    <p>
+                    <p className="max-w-3xl m-auto">
                         Groovin is a platform that helps designers and stylists to share their ideas with the world and get feedback from the community. It also helps users to find unique designs and vote for them.
                     </p>
                     <p className="py-3">
@@ -442,7 +442,7 @@ const Project = () => {
                         <div>
                             <Image className="inline py-5" src={'/static/groovin-logo.png'} alt={''} width={130} height={130} />
                         </div>
-                        <Link className="h5 underline" href="https://www.behance.net/gallery/120230945/UIUX-Case-Ingoma-Rwandan-based-Music-streaming-App" target="_blank" rel="noreferrer">Case study by Serge Mugisha</Link>
+                        <Link className="h5 underline" href="https://www.behance.net/gallery/138260567/Groovin-UIUX-App-Case-A-fashion-design-platform" target="_blank" rel="noreferrer">Case study by Serge Mugisha</Link>
                     </div>
                 </div>
 

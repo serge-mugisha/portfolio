@@ -39,7 +39,7 @@ const testimonials = [
 
 const TestimonialCard = () => {
     return (
-        <div className="p-6 rounded-lg shadow-xl lg:max-w-md min-h-[350px]">
+        <div className="p-6 rounded-lg shadow-xl lg:max-w-md min-h-[450px]">
             <MyCarousel>
                 {testimonials.map((testimonial, index) => (
                     <div key={index} className="flex flex-col pb-6">
