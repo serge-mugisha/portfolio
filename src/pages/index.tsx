@@ -9,17 +9,11 @@ import { Badge } from '@/components/Badge'
 import { NextLink as Link } from '@/components/NextLink'
 import { NextImage as Image } from '@/components/NextImage'
 import Icon from '@/components/Icon'
-import { useEffect } from 'react'
-import ReactGA from 'react-ga';
 import { Card } from '@/components/Card'
 
 
 
 export default function Home() {
-
-  useEffect(() => {
-    ReactGA.pageview('/home');
-  }, [])
 
   const handleScrollToSection = (id: string) => {
     console.log('scrolling to section')
