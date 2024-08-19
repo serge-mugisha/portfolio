@@ -185,16 +185,16 @@ export default function Home() {
               caseStudy="ingoma"
               href="https://ingoma.app/"
             />
-            {/* <ProjectSection
+            <ProjectSection
               bg="red"
-              reverse={false}
+              reverse={true}
               img="/static/cinetie.png"
               title="Cinetie - Cinetie."
               subtitle="Online movie streaming platform"
               description={["Front-end developer", "User interface designer"]}
               skills={["React.js", "Redux", "Bootstrap", "Figma"]}
               href="https://cinetie.com/"
-            /> */}
+            />
           </div>
 
           <div className="box">
