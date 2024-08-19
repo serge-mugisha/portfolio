@@ -20,20 +20,24 @@ export default function ProjectSection({ img, reverse, bg, title, subtitle, desc
     let bgColor = null
     switch (bg) {
         case "green":
-            textColor = "text-green"
-            bgColor = "bg-green"
+            textColor = "text-green";
+            bgColor = "bg-green";
             break;
         case "red":
-            textColor = "text-red"
-            bgColor = "bg-red"
+            textColor = "text-red";
+            bgColor = "bg-red";
             break;
         case "yellow":
-            textColor = "text-yellow"
-            bgColor = "bg-yellow"
+            textColor = "text-yellow";
+            bgColor = "bg-yellow";
+            break;
+        case "purple":
+            textColor = "text-purple";
+            bgColor = "bg-purple";
             break;
         default:
-            textColor = "text-dark"
-            bgColor = "bg-dark"
+            textColor = "text-dark";
+            bgColor = "bg-dark";
     }
     return (
         <>
@@ -41,7 +45,7 @@ export default function ProjectSection({ img, reverse, bg, title, subtitle, desc
                 <div className={`basis-1/2 ${reverse ? 'text-right' : 'text-left'}`}>
                     <h3 className="h3">{title}</h3>
                     <h4 className="h4">{subtitle}</h4>
-                    <div className="py-3">
+                    <div className={`py-3 flex flex-col ${reverse ? 'items-end' : ''}`}>
                         <ul>
                             {description?.map((item, index) => (
                                 <li key={index} className="py-1">{reverse ? "" : "- "}{item}{reverse ? " -" : ""}</li>
@@ -52,10 +56,10 @@ export default function ProjectSection({ img, reverse, bg, title, subtitle, desc
                                 <Badge key={index} text={item} />
                             ))}
                         </div>
-                        {caseStudy ? (<>
+                        {caseStudy ? (<div>
                             <Button href={`/project/${caseStudy}`} classes={`${textColor} bg-dark mr-3`} text="Case Study" />
                             <Button isLink href={href} classes={`text-dark ${bgColor} ml-3`} text="Visit site" />
-                        </>) : <Button isLink href={href} classes={`${textColor} bg-dark`} text="Visit site" />}
+                        </div>) : <Button isLink href={href} classes={`${textColor} bg-dark`} text="Visit site" />}
                     </div>
                 </div>
                 <div className="basis-1/2">
