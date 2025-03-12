@@ -11,6 +11,7 @@ module.exports = {
         red: "#EB5757",
         grey: "#F2F2F2",
         purple: "#C5BBFC",
+        brown: "#D8B79F",
       },
       fontFamily: {
         logo: ["Aladin", "cursive"],

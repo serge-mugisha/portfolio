@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable import/no-anonymous-default-export */
+import React from "react";
 
 interface IconProps {
   width?: number;
@@ -8,7 +9,14 @@ interface IconProps {
 
 export default {
   instagram: ({ width, height, color }: IconProps) => (
-    <svg className="social instagram" width={width} height={height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="social instagram"
+      width={width}
+      height={height}
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         opacity={0.1}
         fillRule="evenodd"
@@ -23,7 +31,14 @@ export default {
     </svg>
   ),
   github: ({ width, height, color }: IconProps) => (
-    <svg className="social github" width={width} height={height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="social github"
+      width={width}
+      height={height}
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         opacity={0.1}
         fillRule="evenodd"
@@ -40,7 +55,14 @@ export default {
     </svg>
   ),
   linkedin: ({ width, height, color }: IconProps) => (
-    <svg className="social linkedin" width={width} height={height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="social linkedin"
+      width={width}
+      height={height}
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         opacity={0.1}
         fillRule="evenodd"
@@ -55,7 +77,14 @@ export default {
     </svg>
   ),
   dribbble: ({ width, height, color }: IconProps) => (
-    <svg className="social dribbble" width={width} height={height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="social dribbble"
+      width={width}
+      height={height}
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         opacity={0.1}
         fillRule="evenodd"
@@ -70,7 +99,14 @@ export default {
     </svg>
   ),
   behance: ({ width, height, color }: IconProps) => (
-    <svg className="social behance" width={width} height={height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="social behance"
+      width={width}
+      height={height}
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         fill={color}
         fillRule="evenodd"
@@ -85,7 +121,14 @@ export default {
     </svg>
   ),
   bars: ({ width, height, color }: IconProps) => (
-    <svg className="bars" width={width} height={height} viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="bars"
+      width={width}
+      height={height}
+      viewBox="0 0 30 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M30 21.25v2.5c0 .338-.124.631-.371.879-.248.247-.54.371-.879.371H1.25c-.339 0-.632-.124-.879-.371A1.201 1.201 0 010 23.75v-2.5c0-.338.124-.631.371-.879.247-.247.54-.371.879-.371h27.5c.338 0 .631.124.879.371.247.248.371.54.371.879zm0-10v2.5c0 .338-.124.632-.371.879-.248.247-.54.371-.879.371H1.25c-.339 0-.632-.124-.879-.371A1.201 1.201 0 010 13.75v-2.5c0-.338.124-.632.371-.879S.911 10 1.25 10h27.5c.338 0 .631.124.879.371.247.247.371.54.371.879zm0-10v2.5c0 .339-.124.632-.371.879-.248.247-.54.371-.879.371H1.25c-.339 0-.632-.124-.879-.371A1.201 1.201 0 010 3.75v-2.5C0 .911.124.618.371.371S.911 0 1.25 0h27.5c.338 0 .631.124.879.371.247.247.371.54.371.879z"
         fill={color}
@@ -93,7 +136,14 @@ export default {
     </svg>
   ),
   designing: ({ width, height, color }: IconProps) => (
-    <svg className="designing" width={width} height={height} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="designing"
+      width={width}
+      height={height}
+      viewBox="0 0 18 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M17.648 0H.352A.352.352 0 000 .352v3.616c0 .194.157.351.352.351h17.296A.352.352 0 0018 3.968V.352A.352.352 0 0017.648 0zm-.351 3.616H.703V.703h16.594v2.913z"
         fill="#232323"
@@ -117,7 +167,14 @@ export default {
     </svg>
   ),
   testing: ({ width, height, color }: IconProps) => (
-    <svg className="testing" width={width} height={height} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="testing"
+      width={width}
+      height={height}
+      viewBox="0 0 18 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M14.4 4.758V1.487A1.495 1.495 0 0012.9 0H5.1a1.495 1.495 0 00-1.5 1.487v.892h10.2v2.379h.6zM4.2 1.784v-.297c0-.493.403-.892.9-.892h7.8c.497 0 .9.4.9.892v.297H4.2zM13.8 14.867H4.2v-2.973h-.6v4.46c.001.82.672 1.486 1.5 1.487h7.8a1.495 1.495 0 001.5-1.487v-2.676h-.6v1.19zm-.9 2.38H5.1c-.497 0-.9-.4-.9-.893v-.892h9.6v.892a.896.896 0 01-.9.892z"
         fill={color}
@@ -137,7 +194,14 @@ export default {
     </svg>
   ),
   ideating: ({ width, height, color }: IconProps) => (
-    <svg className="ideating" width={width} height={height} viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="ideating"
+      width={width}
+      height={height}
+      viewBox="0 0 18 22"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M8.28 16.56c.03 0 .059-.004.087-.01l1.44-.36a.36.36 0 10-.174-.7l-.859.215.577-2.297a.36.36 0 00-.699-.175l-.72 2.88a.36.36 0 00.348.447zM5.76 14.4c1.346 0 1.772-1.643 1.79-1.713a.36.36 0 00-.7-.175c-.002.012-.307 1.168-1.09 1.168-.783 0-1.088-1.156-1.09-1.168a.36.36 0 00-.7.175c.018.07.444 1.713 1.79 1.713zM12.24 14.4c1.345 0 1.772-1.643 1.79-1.713a.36.36 0 00-.7-.175c-.002.012-.307 1.168-1.09 1.168-.783 0-1.088-1.156-1.09-1.168a.36.36 0 00-.7.175c.018.07.444 1.713 1.79 1.713z"
         fill={color}
@@ -149,7 +213,14 @@ export default {
     </svg>
   ),
   framing: ({ width, height, color }: IconProps) => (
-    <svg className="framing" width={width} height={height} viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="framing"
+      width={width}
+      height={height}
+      viewBox="0 0 18 19"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M14.626 12.77v-2.098a.352.352 0 00-.352-.351H12.18a1.4 1.4 0 00-1.395-1.295 1.4 1.4 0 00-1.395 1.295H7.685V8.343a.352.352 0 00-.352-.352h-.247a.696.696 0 010-1.391h.247a.352.352 0 00.352-.352V3.803a.352.352 0 00-.352-.351H.352A.352.352 0 000 3.803v13.854c0 .194.158.352.352.352h13.922a.352.352 0 00.352-.352V15.56a1.4 1.4 0 001.294-1.395 1.4 1.4 0 00-1.294-1.396zM6.98 4.154V5.9a1.401 1.401 0 00-1.294 1.396c0 .736.571 1.342 1.294 1.395v1.63H4.89a.352.352 0 00-.351.351v.248a.696.696 0 01-1.391 0v-.248a.352.352 0 00-.352-.351H.703V4.155h6.278zm-6.278 6.87h1.744a1.4 1.4 0 001.395 1.294 1.4 1.4 0 001.395-1.295h1.744v2.093c0 .194.157.352.352.352h.247a.696.696 0 010 1.392h-.247a.352.352 0 00-.352.351v2.093H.703v-6.28zm13.818 3.835h-.247a.352.352 0 00-.351.352v2.093H7.683V15.56a1.4 1.4 0 001.295-1.395 1.4 1.4 0 00-1.295-1.396v-1.745h2.053a.352.352 0 00.351-.352v-.247a.696.696 0 011.391 0v.247c0 .195.158.352.352.352h2.091v2.093c0 .194.158.352.352.352h.247a.696.696 0 010 1.392z"
         fill={color}
@@ -161,7 +232,14 @@ export default {
     </svg>
   ),
   iterating: ({ width, height, color }: IconProps) => (
-    <svg className="iterating" width={width} height={height} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="iterating"
+      width={width}
+      height={height}
+      viewBox="0 0 18 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M17.46 15.14l-2.129-1.33H9.154a.853.853 0 00.053-.287.857.857 0 00-.225-.576.86.86 0 00.172-.288h6.095a1.44 1.44 0 001.438-1.438V6.617A1.44 1.44 0 0015.25 5.18h-3.75C11.395 2.306 9.032 0 6.135 0h-.186A5.38 5.38 0 00.575 5.374c0 1.435.56 2.785 1.575 3.8l.37.37c.546.547.867 1.258.921 2.021a.861.861 0 00-.564.807c0 .222.087.422.225.575a.856.856 0 00-.225.576c0 .1.02.197.053.287h-.916C.904 13.81 0 14.714 0 15.824c0 1.11.903 2.014 2.014 2.014h13.317l2.128-1.33a.803.803 0 00.38-.684.803.803 0 00-.38-.684zM2.876 16.687h11.619l.287.576H2.877v-.576zm11.677-.575H2.877v-.575h11.677l.288.287-.288.288zm-.058-1.15H2.877v-.576h11.906l-.287.575zm-11.043-2.59c0-.16.129-.288.287-.288h4.604a.288.288 0 010 .575H3.74a.288.288 0 01-.287-.287zm12.659-5.755v4.604a.864.864 0 01-.863.863H9.154a.862.862 0 00-.511-.519 3.161 3.161 0 01.921-2.021l.37-.37a5.329 5.329 0 001.556-3.42h3.759c.476 0 .863.388.863.863zM2.556 8.767a4.768 4.768 0 01-1.405-3.393A4.804 4.804 0 015.949.575h.186a4.8 4.8 0 014.788 4.604h-2.46l1.056-1.057a.899.899 0 00-.99-1.459l-.597-.595-.503.24a3.054 3.054 0 00-.135-.056l-.185-.526H4.975l-.185.526c-.045.017-.09.036-.136.056l-.502-.24-1.51 1.508.241.503a3.05 3.05 0 00-.056.136l-.525.185v2.133l.525.186.056.135-.24.503 1.509 1.509.503-.24c.045.02.09.038.135.056l.185.525H7.11l.185-.526a3.87 3.87 0 00.136-.056l.503.24.596-.596a.899.899 0 00.99-1.459L8.463 5.755h2.452a4.762 4.762 0 01-1.387 3.013l-.37.37A3.731 3.731 0 008.07 11.51H4.014a3.73 3.73 0 00-1.088-2.372l-.37-.37zm.904-2.038c-.053-.109-.1-.22-.137-.33l-.046-.132-.4-.141v-1.32l.4-.14.046-.132c.038-.11.084-.221.137-.33l.062-.125-.184-.384.933-.933.384.184.125-.062c.109-.053.22-.1.33-.137l.132-.045.14-.4h1.32l.141.4.132.045c.11.038.221.084.33.138l.125.061.384-.183.263.263-.625.624a2.282 2.282 0 00-1.41-.485A2.304 2.304 0 003.74 5.467a2.304 2.304 0 002.302 2.301c.518 0 1.008-.171 1.41-.485l.624.625-.263.263-.383-.184-.125.062c-.109.053-.22.1-.33.137l-.132.045-.142.4H5.382l-.141-.4-.131-.045a2.854 2.854 0 01-.33-.137l-.126-.062-.384.184-.933-.933.184-.384-.06-.125zm2.87-.568l.711.712c-.29.207-.635.32-.999.32a1.728 1.728 0 01-1.726-1.726c0-.952.774-1.727 1.726-1.727.364 0 .71.113 1 .32l-.712.712a.976.976 0 00-.288.695c0 .262.102.509.288.694zm2.326 1.513l-1.92-1.92a.41.41 0 010-.575l1.92-1.92a.323.323 0 01.456.456l-1.75 1.752 1.75 1.75a.323.323 0 01-.456.456zm-5.203 5.849c0-.16.129-.288.287-.288h4.604a.288.288 0 010 .575H3.74a.288.288 0 01-.287-.287zM.575 15.824a1.44 1.44 0 011.439-1.438h.288v2.877h-.288a1.44 1.44 0 01-1.439-1.439zm16.58.197l-1.79 1.118-.341-.682.632-.633-.632-.632.34-.682 1.79 1.118a.231.231 0 010 .393zM15.64 3.807l.368.442L18 2.589 16.008.93l-.368.443 1.116.93h-4.097v.575h4.097l-1.116.93z"
         fill={color}
@@ -173,7 +251,14 @@ export default {
     </svg>
   ),
   learnings: ({ width, height, color }: IconProps) => (
-    <svg className="iterating" width={width} height={height} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="iterating"
+      width={width}
+      height={height}
+      viewBox="0 0 18 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M7.548 4.935c.16 0 .29.13.29.29h.581a.872.872 0 00-1.742 0h.581c0-.16.13-.29.29-.29zM9.871 4.935c.16 0 .29.13.29.29h.58a.872.872 0 00-1.741 0h.58c0-.16.131-.29.291-.29zM10.161 6.097v-.29H7.258v.29c0 .8.651 1.451 1.452 1.451.8 0 1.451-.65 1.451-1.451zm-2.273.29h1.643a.873.873 0 01-1.643 0z"
         fill={color}
@@ -185,6 +270,36 @@ export default {
       <path
         d="M9.58 15.097a.872.872 0 000-1.742.872.872 0 000 1.742zm0-1.162a.29.29 0 110 .582.29.29 0 010-.582zM3.15 8.953a2.032 2.032 0 10-2.236 0l.206 1.032c.054.27.294.467.57.467h.685a.582.582 0 00.57-.467l.206-1.032zM.58 7.258c0-.8.652-1.452 1.452-1.452.8 0 1.452.652 1.452 1.452 0 .7-.5 1.287-1.161 1.422v-.604a.87.87 0 10-1.162-.818.87.87 0 00.58.818v.604a1.454 1.454 0 01-1.16-1.422zm1.162 0a.29.29 0 11.581 0 .29.29 0 01-.581 0zM1.69 9.871l-.128-.638c.151.036.308.057.47.057.162 0 .32-.02.47-.057l-.127.638H1.69zM1.742 3.484h.58v1.161h-.58V3.484zM.321 3.882l.537-.222.444 1.073-.536.222-.445-1.073zM2.765 4.733L3.21 3.66l.536.223-.444 1.073-.537-.223z"
         fill={color}
+      />
+    </svg>
+  ),
+  menuOpen: ({ width, height, color }: IconProps) => (
+    <svg
+      className="iterating"
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill="#000"
+        d="M4 18a.965.965 0 0 1-.712-.288A.972.972 0 0 1 3 17c0-.283.095-.52.288-.712A.97.97 0 0 1 4 16h16c.283 0 .521.096.713.288.192.192.288.43.287.712 0 .283-.097.52-.288.713A.957.957 0 0 1 20 18H4Zm0-5a.965.965 0 0 1-.712-.288A.972.972 0 0 1 3 12c0-.283.095-.52.288-.712A.97.97 0 0 1 4 11h16c.283 0 .521.096.713.288.192.192.288.43.287.712 0 .283-.097.52-.288.713A.957.957 0 0 1 20 13H4Zm0-5a.965.965 0 0 1-.712-.288A.972.972 0 0 1 3 7c0-.283.095-.52.288-.712A.97.97 0 0 1 4 6h16c.283 0 .521.096.713.288.192.192.288.43.287.712 0 .283-.097.52-.288.713A.957.957 0 0 1 20 8H4Z"
+      />
+    </svg>
+  ),
+  menuClose: ({ width, height, color }: IconProps) => (
+    <svg
+      className="iterating"
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill="#000"
+        d="m12 13.4-4.9 4.9a.948.948 0 0 1-.7.275.948.948 0 0 1-.7-.275.948.948 0 0 1-.275-.7c0-.283.091-.517.275-.7l4.9-4.9-4.9-4.9a.948.948 0 0 1-.275-.7c0-.283.091-.517.275-.7a.948.948 0 0 1 .7-.275c.283 0 .516.092.7.275l4.9 4.9 4.9-4.9a.948.948 0 0 1 .7-.275c.283 0 .516.092.7.275a.948.948 0 0 1 .275.7.948.948 0 0 1-.275.7L13.4 12l4.9 4.9a.948.948 0 0 1 .275.7.948.948 0 0 1-.275.7.948.948 0 0 1-.7.275.948.948 0 0 1-.7-.275L12 13.4Z"
       />
     </svg>
   ),

@@ -60,7 +60,7 @@ body {
 }
 
 .btn {
-    @apply inline-block px-6 py-2.5 my-3 leading-tight relative;
+    @apply inline-block px-6 py-2.5 my-3 leading-tight relative rounded-sm;
     border: 0.13rem solid #333333;
     @apply transition-all;
 }
@@ -72,6 +72,7 @@ body {
     right: -5px;
     bottom: -5px;
     border: 0.13rem solid #333333;
+    @apply rounded-sm;
     display: block;
     z-index: -1;
     transition: all 150ms ease-in-out;
@@ -90,4 +91,137 @@ body {
 
 .dot {
     @apply bg-gray-300 !important;
+}
+
+/* Intro text animations */
+.emoji-cursor {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🙃</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+.animate-wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 7.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  6% { transform: rotate(20deg); }
+  12% { transform: rotate(-10deg); }
+  18% { transform: rotate(20deg); }
+  24% { transform: rotate(-5deg); }
+  30% { transform: rotate(10deg); }
+  36% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.highlight-text {
+  position: relative;
+  display: inline-block;
+}
+
+@media (hover: hover) {
+  .highlight-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: #5FBA70;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .highlight-text:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+.underline-animate {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+@media (hover: hover) {
+  .underline-animate::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  .underline-animate:hover {
+    transform: translateY(-2px);
+    font-weight: 900;
+  }
+
+  .underline-animate:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.real-estate {
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🏡</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  transition: font-weight 0.2s ease;
+}
+
+@media (hover: hover) {
+  .real-estate:hover {
+    font-weight: 900;
+  }
+}
+
+.startup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .startup:hover {
+    font-weight: 900;
+  }
+}
+
+.rocket {
+  display: inline-block;
+  margin-left: 4px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+@media (hover: hover) {
+  .startup:hover .rocket {
+    opacity: 1;
+    animation: rocketSwing 1.2s ease-in-out infinite;
+    transform-origin: center;
+  }
+}
+
+.rocket-swing {
+    display: inline-block;
+    animation: rocketSwing 1.2s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+@keyframes rocketSwing {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(3px, -3px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
