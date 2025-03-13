@@ -212,7 +212,7 @@ export default function Home() {
               title="Design (UI/UX & Graphic)"
               description={[
                 "With design being one of my earliest interest, I've created user interfaces, brands, posters & logos since then!",
-                "Throughout the period, I've worked with individuals, startups, and established companies.",
+                "Having understanding of both how design and development work together, I've been able to create seamless user experiences.",
               ]}
               projects={[
                 {
@@ -242,7 +242,7 @@ export default function Home() {
               reverse={false}
               title="Real Estate Development"
               description={[
-                "Managing 3+ properties has given me hands-on experience with property maintenance, due diligence, and forecasting the costs, responsibilities, and rewards of real estate investment.",
+                "Managing 3+ properties has given me hands-on experience with property maintenance, due diligence, forecasting costs, responsibilities, and rewards of real estate investment.",
                 "Through that experience, I've built a growing real estate network of brokers, realtors, and builders in the Greater Ottawa Region.",
               ]}
               projects={[
@@ -308,7 +308,7 @@ export default function Home() {
                   isLink
                   href="https://www.thegigabite.ca"
                   classes="text-white bg-dark"
-                  text="Check it out"
+                  text="Grab a Bite!"
                 />
                 </div>
               </div>
